@@ -1,0 +1,15 @@
+.heading_primary {
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+}
+.heading_secondary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  @media (max-width: 600px) {
+    font-size: 2.5rem;
+  }
+}
+.paragraph {
+  font-size: 1.4rem;
+  color: rgb(173, 164, 164);
+}

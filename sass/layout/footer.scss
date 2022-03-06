@@ -1,0 +1,124 @@
+.footer {
+  z-index: 1;
+  // display: flex;
+  width: 100%;
+  padding: 7rem 5rem;
+  // justify-content: space-between;
+  // align-items: center;
+  background-color: $footer_color;
+  color: white;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      & > * {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+  &_info {
+    // background-color: orangered;
+  }
+  &_nav {
+    margin: 0 2rem;
+    @media (max-width: 700px) {
+      margin: 0;
+    } // background-color: yellowgreen;;
+  }
+  &_social_media {
+    // background-color: rgb(255, 0, 119);
+  }
+}
+//FOOTER NAVIGATION
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+
+  &_item {
+    flex: 0 0 50%;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+      @media (max-width: 600px) {
+        flex: 0 0 100%;
+      }
+    }
+  }
+  &_link {
+    color: white;
+    text-decoration: none;
+  }
+}
+//FOOTER INFO
+.footer_info {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-bottom: 1.2rem;
+  }
+  &_logo_box {
+    width: 10rem;
+    margin-bottom: 3rem;
+  }
+  &_logo {
+    width: 100%;
+  }
+  &_location {
+    display: flex;
+  }
+  &_location_icon {
+    margin-right: 1rem;
+    width: 1.5rem;
+    height: 2rem;
+  }
+  &_location_text {
+  }
+  &_contact {
+    display: flex;
+  }
+  &_contact_icon {
+    margin-right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  &_contact_text {
+  }
+  &_e-mail {
+    display: flex;
+  }
+  &_e-mail_icon {
+    margin-right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  &_e-mail_text {
+  }
+}
+//SOCIAL MEDIA AND COPYRIGHT
+.footer_social_media {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 700px) {
+    margin-top: 5rem;
+    align-items: center;
+    & > * {
+      margin-bottom: 3rem;
+    }
+  }
+  &_icon_box {
+    // margin-bottom: 5rem;
+  }
+  &_icon {
+    margin-right: 1rem;
+    width: 2rem;
+  }
+  &_copyright {
+  }
+}

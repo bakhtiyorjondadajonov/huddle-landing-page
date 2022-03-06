@@ -1,0 +1,38 @@
+.header {
+  margin-bottom: 5rem;
+  // background-image: linear-gradient(
+  //     90deg,
+  //     rgba($bg_color 0.8),
+  //     rgba(255, 255, 255, 0.692)
+  //   ),
+  //   url(../images/bg-hero-desktop.svg);
+  // width: 100%;
+  // background-size: cover;
+  background-image: url(../images/bg-hero-desktop.svg);
+  // height: 50rem;
+}
+.header_content {
+  @media (max-width: 840px) {
+    flex-direction: column;
+  }
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &_text {
+    @media (max-width: 840px) {
+      text-align: center;
+    }
+    flex: 0 0 45%;
+    padding: 4rem 5rem;
+  }
+  &_image_box {
+    flex: 1;
+    @media (max-width: 840px) {
+      width: 90%;
+    }
+  }
+  &_image {
+    width: 100%;
+  }
+}

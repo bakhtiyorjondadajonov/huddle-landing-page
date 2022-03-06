@@ -1,0 +1,30 @@
+.inline_button {
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 1rem 3rem;
+  border-radius: 10rem;
+  &--white {
+    margin-right: 2rem;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0.3rem 0.5rem rgb(58, 55, 55);
+  }
+  &--pink {
+    background-color: #ff52c1;
+    color: white;
+    font-weight: 300;
+    margin-top: 3rem;
+    &:hover{
+      transform: translateY(-1rem);
+    }
+  }
+  &--pink--header {
+    position: absolute;
+  }
+}
+.button_box {
+  margin-top: 5rem;
+  display: inline-block;
+}
