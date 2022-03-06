@@ -21,3 +21,4 @@ You are able to:
 - View the optimal layout for the site depending on their device's screen size
 
 ## Deployed project:
+https://huddle-landing-pagebakhtiyorjondadajonov.netlify.app/
